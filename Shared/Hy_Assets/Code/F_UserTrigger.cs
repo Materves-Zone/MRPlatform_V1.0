@@ -237,5 +237,21 @@ public class F_UserTrigger : MonoBehaviour
                 }
             }
         }
+
+        // other ...
+        if (other.tag == "SPos")
+        {
+            Debug.Log("Enter");
+            other.GetComponent<T_StartPoint>().ChangeColor(2);
+        }
+    }
+
+    public void OnTriggerExit(Collider other)
+    {
+        // other ...
+        if (other.tag == "SPos")
+        {
+            other.GetComponent<T_StartPoint>().ChangeColor(1);
+        }
     }
 }
