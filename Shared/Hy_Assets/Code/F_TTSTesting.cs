@@ -23,6 +23,7 @@ public class F_TTSTesting : MonoBehaviour
 
     public F_UserTrigger f_UserTrigger;
     public F_FlashTesting f_FlashTesting;
+    public T_StartPoint t_StartPoint;
     public T_ArrowPointer t_ArrowPointer;
     public GameObject[] PosPosition;
     public GameObject[] PosExhibition;
@@ -51,6 +52,8 @@ public class F_TTSTesting : MonoBehaviour
 
         // follow the flash testing part
         f_FlashTesting.AllTestingReset();
+
+        t_StartPoint.StartPosUpdate("hide", 999);
     }
     public void NbTTSPosUpdate(int eventid)
     {

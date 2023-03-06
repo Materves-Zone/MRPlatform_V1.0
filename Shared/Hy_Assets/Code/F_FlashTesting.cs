@@ -22,6 +22,7 @@ public class F_FlashTesting : MonoBehaviour
     }
 
     public F_UserTrigger f_UserTrigger;
+    public T_StartPoint t_StartPoint;
     public T_ArrowPointer t_ArrowPointer;
     public GameObject[] PosPosition;
     public GameObject[] PosExhibition;
@@ -47,6 +48,9 @@ public class F_FlashTesting : MonoBehaviour
         NbFlashPosObjs[0].SetActive(true);
         NbFlashPosObjs[1].SetActive(true);
         NbFlashPosObjs[2].SetActive(true);
+
+        t_StartPoint.StartPosUpdate("hide", 999);
+        t_StartPoint.StartPosUpdate("show", 0);
     }
     public void NbFlashPosUpdate(int eventid)
     {
@@ -190,12 +194,18 @@ public class F_FlashTesting : MonoBehaviour
                 NbFlashExpObjs[0].SetActive(true);
                 NbFlashExpObjs[1].SetActive(false);
                 NbFlashExpObjs[7].SetActive(true);
+
+                t_StartPoint.StartPosUpdate("hide", 999);
+                t_StartPoint.StartPosUpdate("show", 1);
                 break;
             case 1:
                 NbFlashExpObjs[0].SetActive(true);
                 NbFlashExpObjs[1].SetActive(true);
                 NbFlashExpObjs[2].SetActive(true);
                 NbFlashExpObjs[7].SetActive(false);
+
+                t_StartPoint.StartPosUpdate("hide", 999);
+                t_StartPoint.StartPosUpdate("show", 1);
                 break;
         }
         t_ArrowPointer.ArrowpointersInit();

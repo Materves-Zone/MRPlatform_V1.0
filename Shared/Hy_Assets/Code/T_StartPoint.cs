@@ -40,19 +40,13 @@ public class T_StartPoint : MonoBehaviour
             case "hide":
                 for (int i = 0; i < StartPosArray.Length; i++)
                 {
+                    StartPosArray[i].GetComponent<T_StartPoint>().StartPosChangeColor(1);
                     StartPosArray[i].SetActive(false);
-                    if(i == id)
-                    {
-                        StartPosArray[i].SetActive(false);
-                    }
                 }
                 break;
 
             case "show":
-                for (int i = 0; i < StartPosArray.Length; i++)
-                {
-                    StartPosArray[i].SetActive(false);
-                }
+                    StartPosArray[id].SetActive(true);
                 break;
         }
     }

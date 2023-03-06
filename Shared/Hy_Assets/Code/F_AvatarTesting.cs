@@ -23,6 +23,7 @@ public class F_AvatarTesting : MonoBehaviour
 
     public F_UserTrigger f_UserTrigger;
     public F_TTSTesting f_TTSTesting;
+    public T_StartPoint t_StartPoint;
     public T_ArrowPointer t_ArrowPointer;
     public GameObject[] PosPosition;
     public GameObject[] PosExhibition;
@@ -55,6 +56,9 @@ public class F_AvatarTesting : MonoBehaviour
         NbAvatarPosObjs[2].SetActive(true);
         NBanimators[0].name = "NbPosAvatar";
         f_TTSTesting.AllTestingReset();
+
+        t_StartPoint.StartPosUpdate("hide", 999);
+        t_StartPoint.StartPosUpdate("show", 2);
     }
     public void NbAvatarPosUpdate(int eventid)
     {
@@ -170,6 +174,9 @@ public class F_AvatarTesting : MonoBehaviour
                 NbAvatarExpObjs[0].SetActive(true);
                 NbAvatarExpObjs[1].SetActive(false);
                 NbAvatarExpObjs[7].SetActive(true);
+
+                t_StartPoint.StartPosUpdate("hide", 999);
+                t_StartPoint.StartPosUpdate("show", 3);
                 break;
 
             case 1:
@@ -177,6 +184,9 @@ public class F_AvatarTesting : MonoBehaviour
                 NbAvatarExpObjs[1].SetActive(true);
                 NbAvatarExpObjs[2].SetActive(true);
                 NbAvatarExpObjs[7].SetActive(false);
+
+                t_StartPoint.StartPosUpdate("hide", 999);
+                t_StartPoint.StartPosUpdate("show", 3);
                 break;
         }
         t_ArrowPointer.ArrowpointersInit();
@@ -221,6 +231,7 @@ public class F_AvatarTesting : MonoBehaviour
 
             case 4:
                 NbAvatarExpObjs[11].SetActive(true);
+                t_StartPoint.StartPosUpdate("hide", 999);
                 break;
         }
     }
