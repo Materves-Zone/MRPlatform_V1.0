@@ -7,7 +7,7 @@ public class T_StartPoint : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartPosInit();
     }
 
     // Update is called once per frame
@@ -16,9 +16,47 @@ public class T_StartPoint : MonoBehaviour
         
     }
 
+    /// <summary>
+    /// Start 
+    /// </summary>
+    public bool IsInit;
+    public GameObject[] StartPosArray;
     public Color[] colors;
 
-    public void ChangeColor (int id)
+    public void StartPosInit()
+    {
+        if(IsInit)
+        {
+            for (int i = 0; i < StartPosArray.Length; i++)
+            {
+                StartPosArray[i].SetActive(false);
+            }
+        }
+    }
+    public void StartPosUpdate (string str ,int id)
+    {
+        switch (str)
+        {
+            case "hide":
+                for (int i = 0; i < StartPosArray.Length; i++)
+                {
+                    StartPosArray[i].SetActive(false);
+                    if(i == id)
+                    {
+                        StartPosArray[i].SetActive(false);
+                    }
+                }
+                break;
+
+            case "show":
+                for (int i = 0; i < StartPosArray.Length; i++)
+                {
+                    StartPosArray[i].SetActive(false);
+                }
+                break;
+        }
+    }
+    public void StartPosChangeColor(int id)
     {
         switch (id)
         {

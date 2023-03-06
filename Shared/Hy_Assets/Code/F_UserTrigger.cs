@@ -242,7 +242,7 @@ public class F_UserTrigger : MonoBehaviour
         if (other.tag == "SPos")
         {
             Debug.Log("Enter");
-            other.GetComponent<T_StartPoint>().ChangeColor(2);
+            other.GetComponent<T_StartPoint>().StartPosChangeColor(2);
         }
     }
 
@@ -251,7 +251,8 @@ public class F_UserTrigger : MonoBehaviour
         // other ...
         if (other.tag == "SPos")
         {
-            other.GetComponent<T_StartPoint>().ChangeColor(1);
+            Debug.Log("Exit");
+            other.GetComponent<T_StartPoint>().StartPosChangeColor(1);
         }
     }
 }
