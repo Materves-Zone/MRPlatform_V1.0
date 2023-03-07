@@ -323,6 +323,10 @@ public class F_FlashTesting : MonoBehaviour
         }
         audioSource.PlayOneShot(Clips[id]);
     }
+    public void GuideAudioStop()
+    {
+        audioSource.Stop();
+    }
 
     /// <summary>
     /// Finsh Pannel Control

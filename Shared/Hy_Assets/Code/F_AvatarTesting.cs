@@ -428,4 +428,8 @@ public class F_AvatarTesting : MonoBehaviour
         }
         audioSource1.PlayOneShot(GuideClips[id]);
     }
+    public void GuideAudioStop()
+    {
+        audioSource1.Stop();
+    }
 }

@@ -280,6 +280,10 @@ public class F_TTSTesting : MonoBehaviour
         }
         audioSource1.PlayOneShot(GuideClips[id]);
     }
+    public void GuideAudioStop()
+    {
+        audioSource1.Stop();
+    }
 
     /// <summary>
     /// Resting Control
