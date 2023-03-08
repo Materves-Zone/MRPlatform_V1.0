@@ -58,7 +58,7 @@ public class F_AvatarTesting : MonoBehaviour
         f_TTSTesting.AllTestingReset();
 
         t_StartPoint.StartPosUpdate("hide", 999);
-        t_StartPoint.StartPosUpdate("show", 2);
+        t_StartPoint.StartPosUpdate("show", 4);
     }
     public void NbAvatarPosUpdate(int eventid)
     {
@@ -176,7 +176,7 @@ public class F_AvatarTesting : MonoBehaviour
                 NbAvatarExpObjs[7].SetActive(true);
 
                 t_StartPoint.StartPosUpdate("hide", 999);
-                t_StartPoint.StartPosUpdate("show", 3);
+                t_StartPoint.StartPosUpdate("show", 5);
                 break;
 
             case 1:
@@ -186,7 +186,7 @@ public class F_AvatarTesting : MonoBehaviour
                 NbAvatarExpObjs[7].SetActive(false);
 
                 t_StartPoint.StartPosUpdate("hide", 999);
-                t_StartPoint.StartPosUpdate("show", 3);
+                t_StartPoint.StartPosUpdate("show", 5);
                 break;
         }
         t_ArrowPointer.ArrowpointersInit();

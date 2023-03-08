@@ -2793,7 +2793,6 @@ GameObject:
   - component: {fileID: 284464881}
   - component: {fileID: 284464879}
   - component: {fileID: 284464878}
-  - component: {fileID: 284464880}
   m_Layer: 0
   m_Name: TextMeshPro
   m_TagString: Untagged
@@ -2862,7 +2861,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -2920,14 +2919,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 284464876}
   m_CullTransparentMesh: 0
---- !u!33 &284464880
-MeshFilter:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 284464876}
-  m_Mesh: {fileID: 0}
 --- !u!23 &284464881
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6946,7 +6937,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &620783246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7673,6 +7664,7 @@ MonoBehaviour:
   - {fileID: 7237295371149345469}
   - {fileID: 7237295371369428055}
   - {fileID: 1037093241}
+  - {fileID: 7237295372673224974}
   TTSClips:
   - {fileID: 8300000, guid: 10ff7ad9543ae3d4bb5ed4044813601d, type: 3}
   - {fileID: 8300000, guid: 4589c6c89c6eef044b2f962b3301dfb7, type: 3}
@@ -9096,7 +9088,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &826997809
 Transform:
   m_ObjectHideFlags: 0
@@ -9193,7 +9185,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &833769545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10026,7 +10018,6 @@ GameObject:
   - component: {fileID: 932091794}
   - component: {fileID: 932091792}
   - component: {fileID: 932091791}
-  - component: {fileID: 932091793}
   m_Layer: 0
   m_Name: TextMeshPro
   m_TagString: Untagged
@@ -10095,7 +10086,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -10153,14 +10144,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932091789}
   m_CullTransparentMesh: 0
---- !u!33 &932091793
-MeshFilter:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932091789}
-  m_Mesh: {fileID: 0}
 --- !u!23 &932091794
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11281,9 +11264,9 @@ MonoBehaviour:
   OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 826997808}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 661304854}
+        m_MethodName: ShowHideSettings
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -11292,9 +11275,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 661304854}
-        m_MethodName: AllReseting
-        m_Mode: 1
+      - m_Target: {fileID: 620783245}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 826997808}
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -13398,17 +13392,6 @@ MonoBehaviour:
   OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 661304854}
-        m_MethodName: ShowHideSettings
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 661304849}
         m_MethodName: NbFlashPosStart
         m_Mode: 1
@@ -14364,7 +14347,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1115502399}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -15915,17 +15898,6 @@ MonoBehaviour:
       - m_Target: {fileID: 661304854}
         m_MethodName: AllReseting
         m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 620783245}
-        m_MethodName: SetActive
-        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -18300,7 +18272,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1476072841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19940,7 +19912,6 @@ GameObject:
   - component: {fileID: 1612814217}
   - component: {fileID: 1612814215}
   - component: {fileID: 1612814214}
-  - component: {fileID: 1612814216}
   m_Layer: 0
   m_Name: TextMeshPro
   m_TagString: Untagged
@@ -20009,7 +19980,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -20067,14 +20038,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1612814212}
   m_CullTransparentMesh: 0
---- !u!33 &1612814216
-MeshFilter:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1612814212}
-  m_Mesh: {fileID: 0}
 --- !u!23 &1612814217
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22049,7 +22012,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1832882801}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -32457,7 +32420,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -32527,7 +32490,6 @@ GameObject:
   - component: {fileID: 695151351075848647}
   - component: {fileID: 695151351075848633}
   - component: {fileID: 695151351075848632}
-  - component: {fileID: 695151351075848636}
   m_Layer: 0
   m_Name: TextMeshPro
   m_TagString: Untagged
@@ -32554,14 +32516,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.0035, y: -0.0019}
   m_SizeDelta: {x: 0.032, y: 0.01}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!33 &695151351075848636
-MeshFilter:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 695151351075848634}
-  m_Mesh: {fileID: 0}
 --- !u!23 &695151351075848647
 MeshRenderer:
   m_ObjectHideFlags: 0

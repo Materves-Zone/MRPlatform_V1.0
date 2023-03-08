@@ -54,6 +54,7 @@ public class F_TTSTesting : MonoBehaviour
         f_FlashTesting.AllTestingReset();
 
         t_StartPoint.StartPosUpdate("hide", 999);
+        t_StartPoint.StartPosUpdate("show", 2);
     }
     public void NbTTSPosUpdate(int eventid)
     {
@@ -147,6 +148,9 @@ public class F_TTSTesting : MonoBehaviour
                 NbTTSExpObjs[0].SetActive(true);
                 NbTTSExpObjs[1].SetActive(false);
                 NbTTSExpObjs[7].SetActive(true);
+
+                t_StartPoint.StartPosUpdate("hide", 999);
+                t_StartPoint.StartPosUpdate("show", 3);
                 break;
 
             case 1:
@@ -154,6 +158,9 @@ public class F_TTSTesting : MonoBehaviour
                 NbTTSExpObjs[1].SetActive(true);
                 NbTTSExpObjs[2].SetActive(true);
                 NbTTSExpObjs[7].SetActive(false);
+
+                t_StartPoint.StartPosUpdate("hide", 999);
+                t_StartPoint.StartPosUpdate("show", 3);
                 break;
         }
         t_ArrowPointer.ArrowpointersInit();
@@ -171,6 +178,7 @@ public class F_TTSTesting : MonoBehaviour
 
             case 1:
                 NbTTSExpObjs[5].SetActive(false);
+                NbTTSExpObjs[12].SetActive(false);
 
                 //NbTTSExpObjs[6].SetActive(true);
                 TestingTTSExpStart();
